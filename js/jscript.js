@@ -9,16 +9,16 @@
 function uiFunction() {
     // Capture
     var uiName = document.getElementById("yourName").value;
-    var uiMum = document.getElementById('yourMum').value;
-    var uiDisgust = document.getElementById('yourDisgust').value;
-    var uiFear = document.getElementById("yourFear").value;
-    var uiFood = document.getElementById('yourFood').value;
+    var uiPerson = document.getElementById('yourPerson').value;
+    var uiTouch = document.getElementById('yourTouch').value;
+    var uiEat = document.getElementById("yourEat").value;
+    var uiDrink = document.getElementById('yourDrink').value;
     // Display
-    document.getElementById("disname").innerHTML = uiName;
-    document.getElementById("disMum").innerHTML = uiMum;
-    document.getElementById("disDisgust").innerHTML = uiDisgust;
-    document.getElementById("disFear").innerHTML = uiFear;
-    document.getElementById("disFood").innerHTML = uiFood;
+    document.getElementById("disName").innerHTML = uiName;
+    document.getElementById("disPerson").innerHTML = uiPerson;
+    document.getElementById("disTouch").innerHTML = uiTouch;
+    document.getElementById("disEat").innerHTML = uiEat;
+    document.getElementById("disDrink").innerHTML = uiDrink;
 }
 
 // Room1

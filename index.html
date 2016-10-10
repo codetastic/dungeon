@@ -9,9 +9,9 @@
 
     <body>
 
-<audio autoplay loop src="audio/wind.mp3" type="audio/mp3"></audio>
+        <audio autoplay loop src="audio/wind.mp3" type="audio/mp3"></audio>
 
-</audio>
+        </audio>
 
         <!-- Title -->
 
@@ -34,34 +34,34 @@
                     </div>
                     <div class="formRow">
                         <div class="">
-                            <h2>What's your mum's name?</h2>
+                            <h2>Who do you fear the most?</h2>
                         </div>
                         <div class="">
-                            <input type="text" name="ui" id="yourMum">
+                            <input type="text" name="ui" id="yourPerson">
                         </div>
 
                     </div>
                     <div class="formRow">
                         <div class="">
-                            <h2>What disgusts you the most?</h2>
+                            <h2>The one thing you would never touch?</h2>
                         </div>
                         <div class="">
-                            <input type="text" name="ui" id="yourDisgust">
+                            <input type="text" name="ui" id="yourTouch">
                         </div>
                     </div>
                     <div class="formRow">
                         <div class="">
-                            <h2>What are you afraid of the most?</h2>
+                            <h2>The one thing you would never eat?</h2>
                         </div>
                         <div class="">
-                            <input type="text" name="ui" id="yourFear">
+                            <input type="text" name="ui" id="yourEat">
                         </div>
                     </div>
                     <div class="formRow">
-                        <h2>What's one thing you would never eat?</h2>
+                        <h2>The one thing you would never drink?</h2>
                     </div>
                     <div class="">
-                        <input type="text" name="ui" id="yourFood">
+                        <input type="text" name="ui" id="yourDrink">
                     </div>
                 </form>
                 <button onclick="uiFunction()">Start</button>
@@ -77,14 +77,12 @@
 
         <div id="room1Back">
             <div id="room1">
-                <p>
-                    <h3>It's night, it's raining and you're lost. You walk up to the ginormous door of a dark and lifeless dungeon. What do you do?</h2>
-                </p>
+                <h3>It's night, it's raining and you're lost. You walk up to the ginormous door of a dark and lifeless dungeon. What do you do?</h3>
                 <br>
-                <button class="answerButton" id="answer1a">Ring the scull-shaped doorbell</button><br>
-                <button class="answerButton" id="answer1b">Shout 'Open the blooming door ye Croquet-Playin' Scone-Munchers'</button><br>
-                <button class="answerButton" id="answer1c">Try to pick the lock</button><br>
-                <button class="answerButton" id="answer1d">Lie down to have a nap</button><br>
+                <button class="answerButton" id="answer1a">Shout "Open the blooming door ye Croquet-Playin' Scone-Munchers"</button><br>
+                <button class="answerButton" id="answer1b">Try to pick the lock</button><br>
+                <button class="answerButton" id="answer1c">Lie down to have a nap</button><br>
+                <button class="answerButton" id="answer1d">Ring the scull-shaped doorbell</button><br>
                 <button class="answerButton" id="answer1e">Call your mum</button>
             </div>
         </div>
@@ -92,16 +90,11 @@
         <!-- Room1 Modal1 -->
 
         <div id="modal1a" class="modal">
-            <div id="modalContent1a" class="modalContent">
+            <div id="modalContent1c" class="modalContent">
                 <p>
-                    Modal 1<br> A trap door opens under your feet and your fall into deep hole full of
-                    <p id="disname"></p>. You die.
-                    <p id="disMum"></p>
-                    <p id="disDisgust"></p>
-                    <p id="disFear"></p>
-                    <p id="disFood"></p>
+                    Gargoyles wake up, fly down and eat your flesh. Your bones fall crashing on the ground. You die.
+                    <button class="closeButton1a">Start again</button>
                 </p>
-                <button class="closeButton1a">Start again</button>
             </div>
         </div>
 
@@ -110,7 +103,7 @@
         <div id="modal1b" class="modal">
             <div id="modalContent1b" class="modalContent">
                 <p>
-                    Modal 2<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
+                    Super glue gushes through the keyhole. Your hands stick to the door. You take our your pen knife and cut your hands off to break free. You bleed to death.
                     <button class="closeButton1b">Start again</button>
                 </p>
             </div>
@@ -119,11 +112,12 @@
         <!-- Room1 Modal3 -->
 
         <div id="modal1c" class="modal">
-            <div id="modalContent1c" class="modalContent">
+            <div id="modalContent1a" class="modalContent">
                 <p>
-                    Modal 3<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
-                    <button class="closeButton1c">Start again</button>
+                    A trap door opens under your feet and your fall into deep hole full of
+                    <p id="disTouch"></p>. You die.
                 </p>
+                <button class="closeButton1c">Start again</button>
             </div>
         </div>
 
@@ -132,7 +126,7 @@
         <div id="modal1d" class="modal">
             <div id="modalContent1d" class="modalContent">
                 <p>
-                    Modal 4<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
+                    NEXT LEVEL
                     <button class="closeButton1d">Start again</button>
                 </p>
             </div>
@@ -142,10 +136,8 @@
 
         <div id="modal1e" class="modal">
             <div id="modalContent1e" class="modalContent">
-                <p>
-                    Modal 5<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
-                    <button class="closeButton1e">Start again</button>
-                </p>
+                <h3>Your mum shouts "Come home you</h3> <p id="disEat"></p> eating, <p id="disDrink"></p> <h3>drinker" and hangs up. Your phone is a Samsung and the battery catches fire. You burn to death.</h3>
+                <button class="closeButton1e">Start again</button>
             </div>
         </div>
 
