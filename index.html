@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Dungeon Game</title>
+    </head>
+
+    <body>
+
+<audio autoplay loop src="audio/wind.mp3" type="audio/mp3"></audio>
+
+</audio>
+
+        <!-- Title -->
+
+        <div class="titleBox">
+            <h1>THE CURSED DUNGEON'S DEADLY SQUIIIZ...</h1>
+        </div>
+
+        <!-- User info -->
+
+        <div class="wall">
+            <div id="userinfo" class="room">
+                <form class="form" action="index.html" method="post">
+                    <div class="formRow">
+                        <div class="">
+                            <h2>What's your name?</h2>
+                        </div>
+                        <div class="">
+                            <input type="text" name="ui" id="yourName">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="">
+                            <h2>What's your mum's name?</h2>
+                        </div>
+                        <div class="">
+                            <input type="text" name="ui" id="yourMum">
+                        </div>
+
+                    </div>
+                    <div class="formRow">
+                        <div class="">
+                            <h2>What disgusts you the most?</h2>
+                        </div>
+                        <div class="">
+                            <input type="text" name="ui" id="yourDisgust">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="">
+                            <h2>What are you afraid of the most?</h2>
+                        </div>
+                        <div class="">
+                            <input type="text" name="ui" id="yourFear">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <h2>What's one thing you would never eat?</h2>
+                    </div>
+                    <div class="">
+                        <input type="text" name="ui" id="yourFood">
+                    </div>
+                </form>
+                <button onclick="uiFunction()">Start</button>
+            </div>
+            <div id="hands">
+                <div id="enterButton">
+                    <h4>ENTER</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- Room1 -->
+
+        <div id="room1Back">
+            <div id="room1">
+                <p>
+                    <h3>It's night, it's raining and you're lost. You walk up to the ginormous door of a dark and lifeless dungeon. What do you do?</h2>
+                </p>
+                <br>
+                <button class="answerButton" id="answer1a">Ring the scull-shaped doorbell</button><br>
+                <button class="answerButton" id="answer1b">Shout 'Open the blooming door ye Croquet-Playin' Scone-Munchers'</button><br>
+                <button class="answerButton" id="answer1c">Try to pick the lock</button><br>
+                <button class="answerButton" id="answer1d">Lie down to have a nap</button><br>
+                <button class="answerButton" id="answer1e">Call your mum</button>
+            </div>
+        </div>
+
+        <!-- Room1 Modal1 -->
+
+        <div id="modal1a" class="modal">
+            <div id="modalContent1a" class="modalContent">
+                <p>
+                    Modal 1<br> A trap door opens under your feet and your fall into deep hole full of
+                    <p id="disname"></p>. You die.
+                    <p id="disMum"></p>
+                    <p id="disDisgust"></p>
+                    <p id="disFear"></p>
+                    <p id="disFood"></p>
+                </p>
+                <button class="closeButton1a">Start again</button>
+            </div>
+        </div>
+
+        <!-- Room1 Modal2 -->
+
+        <div id="modal1b" class="modal">
+            <div id="modalContent1b" class="modalContent">
+                <p>
+                    Modal 2<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
+                    <button class="closeButton1b">Start again</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Room1 Modal3 -->
+
+        <div id="modal1c" class="modal">
+            <div id="modalContent1c" class="modalContent">
+                <p>
+                    Modal 3<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
+                    <button class="closeButton1c">Start again</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Room1 Modal4 -->
+
+        <div id="modal1d" class="modal">
+            <div id="modalContent1d" class="modalContent">
+                <p>
+                    Modal 4<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
+                    <button class="closeButton1d">Start again</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Room1 Modal5 -->
+
+        <div id="modal1e" class="modal">
+            <div id="modalContent1e" class="modalContent">
+                <p>
+                    Modal 5<br> A trap door opens under your feet and your fall into deep hole full of XXXX. You die.
+                    <button class="closeButton1e">Start again</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Room2 -->
+
+        <div class="wall">
+            <div id="room2" class="room">
+                Question 1:
+                <form class="form" action="index.html" method="post">
+                    <input type="radio" name="q1" value="q1a">Answer<br>
+                    <input type="radio" name="q1" value="q1b">Answer<br>
+                    <input type="radio" name="q1" value="q1c">Answer<br>
+                    <input type="radio" name="q1" value="q1d">Answer<br>
+                    <input type="radio" name="q1" value="q1e">Answer<br>
+                </form>
+            </div>
+        </div>
+
+        <!-- Room3 -->
+
+        <div class="wall">
+            <div id="room3" class="room">
+                Question 1:
+                <form class="form" action="index.html" method="post">
+                    <input type="radio" name="q1" value="q1a">Answer<br>
+                    <input type="radio" name="q1" value="q1b">Answer<br>
+                    <input type="radio" name="q1" value="q1c">Answer<br>
+                    <input type="radio" name="q1" value="q1d">Answer<br>
+                    <input type="radio" name="q1" value="q1e">Answer<br>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/jscript.js"></script>
+
+    </body>
+
+</html>
+
+
+<!-- Radio button http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_radio_value -->
+<!-- How to make a modal http://www.w3schools.com/howto/howto_css_modals.asp -->
